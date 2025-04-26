@@ -1,4 +1,4 @@
-@import "../../../variables.css";
+@import "../../variables.css";
 
 .container {
   position: relative;
@@ -76,10 +76,36 @@
 .topBlur {
   position: absolute;
   top: -128px;
-  left: -100px;
-  width: 300px;
-  height: 300px;
-  background: rgba(255, 255, 255, 0.2);
+  left: -10vw;
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  min-width: 350px;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
   filter: blur(100px);
-  z-index: -1;
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  top: 246px;
+  right: -25vw;
+  width: 70vw;
+  height: 50vw;
+  min-width: 350px;
+  min-width: 250px;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .content {
+    align-items: center;
+  }
 }

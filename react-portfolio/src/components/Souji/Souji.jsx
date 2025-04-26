@@ -1,5 +1,5 @@
 import React from "react";
-import { getImageUrl } from "../../../utils";
+import { getImageUrl } from "../../utils.js";
 import styles from "./Souji.module.css";
 
 export const Souji = () => {
@@ -14,11 +14,20 @@ export const Souji = () => {
           skilled in building accessible, high-performance web apps with strong
           API development, integration and Agile/TDD practices.
         </p>
-        <a href = "mailto:soujanyagodugu82@gmail.com" className={styles.contactBtn}>Contact Me</a>
+        <a
+          href="mailto:soujanyagodugu82@gmail.com"
+          className={styles.contactBtn}
+        >
+          Contact Me
+        </a>
       </div>
-      <img src = {getImageUrl("hero/heroImage.png")} alt = "Soujanya Image" className={styles.soujiImage}/>
+      <img
+        src={getImageUrl("hero/heroImage.png")}
+        alt="Soujanya Image"
+        className={styles.soujiImage}
+      />
       <div className={styles.topBlur} />
-      <div className={styles.bottomBlur}/>
+      <div className={styles.bottomBlur} />
     </section>
   );
 };
